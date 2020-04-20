@@ -1,0 +1,114 @@
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url('../img/main_bg.jpg') center (center/cover) no-repeat;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+
+    &__header {
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    &__subheader {
+        margin-top: 17px;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 65px;
+        width: 425px;
+    }
+
+    &__icon {
+        width: 106px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        color: #ffffff;
+        margin-top: 18px;
+        font-size: 16px;
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        a:hover {
+            color: $main-color;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .promo {
+        background-position: left -245px center;
+        &__wrapper {
+            max-width: 750px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 578px) {
+    .promo {
+        min-height: 50vh;
+        background-position: left -280px center;
+        &__wrapper {
+            margin-top: 45px;
+            text-align: center;
+        }
+        &__header {
+            font-size: 24px;
+        }
+        &__subheader {
+            margin: 0;
+            font-size: 18px;
+        }
+        &__icons {
+            width: 70%;
+            align-items: baseline;
+            margin-top: 30px;
+        }
+        &__icon {
+            margin-right: 10px;
+            font-size: 12px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__link {
+            margin-top: 25px;
+        }
+    }
+}  
