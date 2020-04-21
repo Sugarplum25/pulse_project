@@ -1,32 +1,30 @@
 .advantages {
     background-color: #f6f6f6;
     padding: 70px 0 78px 0;
-    &__header {
-        color: #0d0d0d;
-        font-size: 30px;
-        font-weight: 700;
-        text-align: center;
-    }
     &__wrapper {
         margin-top: 65px;
         display: flex;
         justify-content: space-between;
     }
+
     &__item {
         text-align: center;
         max-width: 238px;
     }
+
     &__subtitle {
         margin-top: 38px;
         color: #0d0d0d;
         font-size: 18px;
         font-weight: 700;
     }
+
     &__descr {
         margin-top: 25px;
         color: #0d0d0d;
         font-size: 16px;
         font-weight: 300;
+
         a {
             text-decoration: underline;
             color: $main-color;
@@ -39,36 +37,42 @@
         justify-content: space-around;
     }
 }
+
 @media (max-width: 767px) {
     .advantages {
         padding: 35px 0 36px 0;
-        &__header {
-            font-size: 24px;
-        }
         &__wrapper {
             margin-top: 30px;
         }
+
         &__item {
             max-width: 200px;
         }
+
         &__subtitle {
             margin-top: 15px;
             font-size: 16px;
         }
+
         &__descr {
             margin-top: 15px;
+            font-size: 15px;
         }
     }
 }
+
 @media (max-width: 578px) {
     .advantages {
         &__wrapper {
             flex-direction: column;
             align-items: center;
         }
+        &__item {
+            max-width: initial;
+        }
         &__descr {
             margin-top: 0;
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 }
