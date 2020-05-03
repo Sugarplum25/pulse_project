@@ -47,7 +47,8 @@
 		flex-wrap: wrap;
 		display: none;
 		&_active {
-			display: flex;
+            display: flex;
+            justify-content: space-around;
 		}
     }
 
@@ -193,6 +194,9 @@
 }
 
 @media (max-width: 992px) {
+    .catalog {
+        padding-bottom: 70px;
+    }
     .catalog-item {
         width: 48%;
     }    
@@ -211,6 +215,7 @@
 
 @media (max-width: 575px) {
     .catalog {
+        padding-bottom: 25px;
         &__tabs {
             flex-direction: column;
         }
