@@ -43,3 +43,18 @@
 #consultation, #order, #thanks {
     display: none;
 }
+@media (max-width: 575px) {
+    .modal {
+        &__close {
+            top: 15px;
+            right: 10px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .modal {
+        &__close {
+            right: 45px;
+        }
+    }
+}
