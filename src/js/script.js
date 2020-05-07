@@ -83,8 +83,10 @@ $(document).ready(function(){
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
-    
-//TODO: очистить формы после предупреждений
+    $(".modal__close").click(function() {
+        $('label.error').hide();
+        $('.error').removeClass("error");
+    });
 
 //mask 
     $('input[name=phone]').mask('+7 (999) 999-99-99');
