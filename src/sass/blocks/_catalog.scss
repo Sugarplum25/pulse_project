@@ -76,6 +76,8 @@
         }
 
         &__descr {
+            width: 90%;
+            margin: 0 auto;
             margin-top: 16px;
             color: #0d0d0d;
             font-size: 14px;
@@ -154,7 +156,7 @@
                 transform: translateX(-100%);
                 margin-left: 0;
 			}
-			li {
+			p {
 				position: relative;
 				margin-bottom: 25px;
 				color: #555555;
